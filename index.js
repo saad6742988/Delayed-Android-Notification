@@ -8,6 +8,7 @@ app.post('/sendTimedNotification', async (req, res) => {
 
     const event = req.query.event
     const delay = req.query.delay
+    console.log(delay)
     setTimeout(() => {
 
         if (sendNotification(event)) {
