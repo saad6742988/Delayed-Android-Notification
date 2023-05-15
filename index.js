@@ -22,7 +22,7 @@ app.post('/sendTimedNotification', async (req, res) => {
 });
 
 app.get('/', async (req, res) => {
-    res.send("<h1>Hello</h1>")
+    res.send("<h1>It is Server to send Timed FCM Notification</h1>")
 });
 
 const sendNotification = async (event) => {
