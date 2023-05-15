@@ -34,7 +34,12 @@ const sendNotification = async (event) => {
         };
         var body = {
             to: "/topics/All",
-            notification: notification
+            notification: notification,
+            "data":
+            {
+                "activity_name": "MainActivity",
+                "channel_id": "Timed Notification"
+            }
         };
         const topic = 'All';
 
