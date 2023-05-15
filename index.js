@@ -31,7 +31,7 @@ const sendNotification = async (event) => {
         const serverKey = 'AAAAQBhZjV0:APA91bHgDgXhzUXN16FUE5AFX2lE7HSe0qKk9BGiUOV2PlDhEEvAJvdeqVTVLkiQV_wFd2bs13pkkAe_gGHOcxa5WSZao_UzxYhLwiu6TlzoRPkTogPs7KOS8snBzAspKdpvJxHUKd9M';
         const notification = {
             title: event,
-            body: 'This Event is going to Start in 10 minutes',
+            body: 'This Event is going to Start Soon',
         };
         var body = {
             to: "/topics/All",
