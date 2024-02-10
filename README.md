@@ -6,6 +6,7 @@ You have to pass time as millisecond after which you want to trigger the notific
 
 This API can be used to schedule a reminder of any event like meeting.
 
+### Sample API Call Using Fuel Library
 ![Sample.png](Sample.png)
 
 If you want to trigger it at a specific time, you can use the current time for calculating the delayed time.
