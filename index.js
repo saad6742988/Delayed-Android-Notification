@@ -6,6 +6,8 @@ const axios = require('axios');
 
 app.post('/sendTimedNotification', async (req, res) => {
 
+    //const title = req.query.title  // it will be used when you passed the title in my case I am passing Event
+    //const msg = req.query.msg    // it will be used when passed the message
     const event = req.query.event
     const delay = req.query.delay
     console.log(delay)
@@ -28,7 +30,7 @@ app.get('/', async (req, res) => {
 
 const sendNotification = async (event) => {
     try {
-        const serverKey = 'AAAAQBhZjV0:APA91bHgDgXhzUXN16FUE5AFX2lE7HSe0qKk9BGiUOV2PlDhEEvAJvdeqVTVLkiQV_wFd2bs13pkkAe_gGHOcxa5WSZao_UzxYhLwiu6TlzoRPkTogPs7KOS8snBzAspKdpvJxHUKd9M';
+        const serverKey = 'YOUR_SERVER_KEY_FROM_FCM';
         const notification = {
             title: event,
             body: 'This Event is going to Start Soon',
@@ -68,4 +70,4 @@ const sendNotification = async (event) => {
 
 
 
-app.listen(process.env.PORT || 8000, () => { console.log('listening express server from heroku') })
+app.listen(process.env.PORT || 8000, () => { console.log('Started Listening') })
